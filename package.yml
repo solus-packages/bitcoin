@@ -1,0 +1,35 @@
+name       : bitcoin
+version    : 0.11.1
+release    : 1
+source     :
+    - https://github.com/bitcoin/bitcoin/archive/v0.11.1.tar.gz : 6b238ab46bb10c7a83237dfd69b09c95f08043bbe0b478f9c256b9536186b8d2
+license    : MIT
+summary    : Bitcoin is an experimental new digital currency that enables instant payments to anyone, anywhere in the world.
+description: |
+    Bitcoin is an experimental new digital currency that enables instant payments to anyone, anywhere in the world.
+clang : no
+builddeps  :
+    - pkgconfig(libevent)
+    - pkgconfig(libqrencode)
+    - pkgconfig(libssl)
+    - pkgconfig(protobuf)
+    - pkgconfig(Qt5Gui)
+    - db4.8-devel
+    - libboost-devel
+libsplit: no
+setup      : |
+    ./autogen.sh
+    %configure --disable-static --with-gui=qt5
+build      : |
+    %make
+install    : |
+    %make_install
+    install -Dm644 $srcdir/contrib/debian/bitcoin-qt.desktop $installdir/usr/share/applications/bitcoin-qt.desktop
+    install -Dm644 $pkgfiles/bitcoin128.png $installdir/usr/share/pixmaps/bitcoin128.png
+    # Confs and Man for bitcoind and cli
+    install -Dm644 $srcdir/contrib/debian/examples/bitcoin.conf $installdir/usr/share/doc/bitcoind/examples/bitcoin.conf
+    install -Dm644 $srcdir/contrib/debian/bitcoind.bash-completion $installdir/usr/share/bash-completion/completions/bitcoind
+    install -Dm644 $srcdir/contrib/debian/manpages/bitcoin-cli.1 $installdir/usr/share/man/man1/bitcoin-cli.1
+    install -Dm644 $srcdir/contrib/debian/manpages/bitcoin-qt.1 $installdir/usr/share/man/man1/bitcoin-qt.1
+    install -Dm644 $srcdir/contrib/debian/manpages/bitcoind.1 $installdir/usr/share/man/man1/bitcoind.1
+    install -Dm644 $srcdir/contrib/debian/manpages/bitcoin.conf.5 $installdir/usr/share/man/man5/bitcoin.conf.5
