@@ -1,12 +1,13 @@
 name       : bitcoin
-version    : 0.12.0
-release    : 2
+version    : 0.12.1
+release    : 3
 source     :
-    - https://github.com/bitcoin/bitcoin/archive/v0.12.0.tar.gz : 92b1b6e1f49e74c914ff3dd43e97bb1859bcd3239310b5fe54db326aba1fd0a5
+    - https://github.com/bitcoin/bitcoin/archive/v0.12.1.tar.gz : 7bdc287575067461c123e1afcb48843f9f78eb5e6cac95b413e2e09f1f7fc7bd
 license    : MIT
 summary    : Bitcoin is an experimental new digital currency that enables instant payments to anyone, anywhere in the world.
 description: |
     Bitcoin is an experimental new digital currency that enables instant payments to anyone, anywhere in the world.
+component   : network.clients
 clang : no
 builddeps  :
     - pkgconfig(libevent)
@@ -16,7 +17,6 @@ builddeps  :
     - pkgconfig(Qt5Gui)
     - db4.8-devel
     - libboost-devel
-libsplit: no
 setup      : |
     ./autogen.sh
     %configure --disable-static --with-gui=qt5
@@ -24,12 +24,12 @@ build      : |
     %make
 install    : |
     %make_install
-    install -Dm644 $srcdir/contrib/debian/bitcoin-qt.desktop $installdir/usr/share/applications/bitcoin-qt.desktop
-    install -Dm644 $pkgfiles/bitcoin128.png $installdir/usr/share/pixmaps/bitcoin128.png
+    install -Dm644 %workdir%/contrib/debian/bitcoin-qt.desktop %installroot%/usr/share/applications/bitcoin-qt.desktop
+    install -Dm644 $pkgfiles/bitcoin128.png %installroot%/usr/share/pixmaps/bitcoin128.png
     # Confs and Man for bitcoind and cli
-    install -Dm644 $srcdir/contrib/debian/examples/bitcoin.conf $installdir/usr/share/doc/bitcoind/examples/bitcoin.conf
-    install -Dm644 $srcdir/contrib/debian/bitcoind.bash-completion $installdir/usr/share/bash-completion/completions/bitcoind
-    install -Dm644 $srcdir/contrib/debian/manpages/bitcoin-cli.1 $installdir/usr/share/man/man1/bitcoin-cli.1
-    install -Dm644 $srcdir/contrib/debian/manpages/bitcoin-qt.1 $installdir/usr/share/man/man1/bitcoin-qt.1
-    install -Dm644 $srcdir/contrib/debian/manpages/bitcoind.1 $installdir/usr/share/man/man1/bitcoind.1
-    install -Dm644 $srcdir/contrib/debian/manpages/bitcoin.conf.5 $installdir/usr/share/man/man5/bitcoin.conf.5
+    install -Dm644 %workdir%/contrib/debian/examples/bitcoin.conf %installroot%/usr/share/doc/bitcoind/examples/bitcoin.conf
+    install -Dm644 %workdir%/contrib/debian/bitcoind.bash-completion %installroot%/usr/share/bash-completion/completions/bitcoind
+    install -Dm644 %workdir%/contrib/debian/manpages/bitcoin-cli.1 %installroot%/usr/share/man/man1/bitcoin-cli.1
+    install -Dm644 %workdir%/contrib/debian/manpages/bitcoin-qt.1 %installroot%/usr/share/man/man1/bitcoin-qt.1
+    install -Dm644 %workdir%/contrib/debian/manpages/bitcoind.1 %installroot%/usr/share/man/man1/bitcoind.1
+    install -Dm644 %workdir%/contrib/debian/manpages/bitcoin.conf.5 %installroot%/usr/share/man/man5/bitcoin.conf.5
