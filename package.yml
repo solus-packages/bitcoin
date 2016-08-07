@@ -1,14 +1,15 @@
 name       : bitcoin
 version    : 0.12.1
-release    : 3
+release    : 4
 source     :
     - https://github.com/bitcoin/bitcoin/archive/v0.12.1.tar.gz : 7bdc287575067461c123e1afcb48843f9f78eb5e6cac95b413e2e09f1f7fc7bd
 license    : MIT
-summary    : Bitcoin is an experimental new digital currency that enables instant payments to anyone, anywhere in the world.
+summary    : Bitcoin is an experimental new digital currency that enables instant
+    payments to anyone, anywhere in the world.
 description: |
     Bitcoin is an experimental new digital currency that enables instant payments to anyone, anywhere in the world.
-component   : network.clients
-clang : no
+component  : network.clients
+clang      : no
 builddeps  :
     - pkgconfig(libevent)
     - pkgconfig(libqrencode)
