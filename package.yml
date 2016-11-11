@@ -1,6 +1,6 @@
 name       : bitcoin
 version    : 0.13.1
-release    : 7
+release    : 8
 source     :
     - https://github.com/bitcoin/bitcoin/archive/v0.13.1.tar.gz : 97d4a1aea7aed957e76f8f5e6ba2a2bfc66c1fcbdaf76ee46bd0650e5957eaa9
 license    : MIT
