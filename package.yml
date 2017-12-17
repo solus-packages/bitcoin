@@ -1,11 +1,10 @@
 name       : bitcoin
-version    : 0.15.0.1
-release    : 18
+version    : 0.15.1
+release    : 19
 source     :
-    - https://github.com/bitcoin/bitcoin/archive/v0.15.0.1.tar.gz : a2d28632be6918ce23d2fd589f0aecbb2a90579c9345f47fdfe1e77ec31f023e
+    - https://github.com/bitcoin/bitcoin/archive/v0.15.1.tar.gz : 98b3a98a67054123bef6714e4035e18f9250a1b6d63829258ad057906e75d8b1
 license    : MIT
-summary    : Bitcoin is an experimental new digital currency that enables instant
-    payments to anyone, anywhere in the world.
+summary    : Bitcoin is an experimental new digital currency that enables instant payments to anyone, anywhere in the world.
 description: |
     Bitcoin is an experimental new digital currency that enables instant payments to anyone, anywhere in the world.
 component  : network.clients
