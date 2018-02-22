@@ -65,6 +65,7 @@ libbitcoinconsensus.so.0:_ZN10CSipHasher5WriteEPKhm
 libbitcoinconsensus.so.0:_ZN10CSipHasher5WriteEm
 libbitcoinconsensus.so.0:_ZN10CSipHasherC1Emm
 libbitcoinconsensus.so.0:_ZN10CSipHasherC2Emm
+libbitcoinconsensus.so.0:_ZN11sha256_sse49TransformEPjPKhm
 libbitcoinconsensus.so.0:_ZN12CHMAC_SHA2568FinalizeEPh
 libbitcoinconsensus.so.0:_ZN12CHMAC_SHA256C1EPKhm
 libbitcoinconsensus.so.0:_ZN12CHMAC_SHA256C2EPKhm
