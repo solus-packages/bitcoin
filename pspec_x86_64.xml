@@ -2,8 +2,8 @@
     <Source>
         <Name>bitcoin</Name>
         <Packager>
-            <Name>Joey Riches</Name>
-            <Email>josephriches@gmail.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Packager>
         <License>MIT</License>
         <PartOf>network.clients</PartOf>
@@ -45,7 +45,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="25">bitcoin</Dependency>
+            <Dependency release="26">bitcoin</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/bitcoinconsensus.h</Path>
@@ -54,12 +54,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="25">
-            <Date>2018-06-16</Date>
-            <Version>0.16.0</Version>
+        <Update release="26">
+            <Date>2018-06-18</Date>
+            <Version>0.16.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joey Riches</Name>
-            <Email>josephriches@gmail.com</Email>
+            <Name>Joshua Strobl</Name>
+            <Email>joshua@stroblindustries.com</Email>
         </Update>
     </History>
 </PISI>
