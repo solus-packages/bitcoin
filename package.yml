@@ -1,8 +1,8 @@
 name       : bitcoin
-version    : 0.16.3
-release    : 28
+version    : 0.17.0
+release    : 29
 source     :
-    - https://github.com/bitcoin/bitcoin/archive/v0.16.3.tar.gz : c8557b6df5f5cdf67b3ddf6fe501cfc6e0be698f175f16927dd08d6040df7d9f
+    - https://github.com/bitcoin/bitcoin/archive/v0.17.0.tar.gz : 4c22320f1787508d4d22356b26e2859c60242597f54aa1381c33f22a50e17155
 license    : MIT
 summary    : Bitcoin is an experimental new digital currency that enables instant payments to anyone, anywhere in the world.
 description: |
@@ -25,8 +25,8 @@ build      : |
     %make
 install    : |
     %make_install
-    install -Dm644 $workdir/contrib/debian/bitcoin-qt.desktop $installdir/usr/share/applications/bitcoin-qt.desktop
-    install -Dm644 $pkgfiles/bitcoin128.png $installdir/usr/share/pixmaps/bitcoin128.png
+    install -Dm0644 $pkgfiles/bitcoin-qt.desktop $installdir/usr/share/applications/bitcoin-qt.desktop
+    install -Dm0644 $pkgfiles/bitcoin128.png $installdir/usr/share/pixmaps/bitcoin128.png
     # Confs and Man for bitcoind and cli
-    install -Dm644 $workdir/contrib/debian/examples/bitcoin.conf $installdir/usr/share/doc/bitcoind/examples/bitcoin.conf
-    install -Dm644 $workdir/contrib/debian/bitcoind.bash-completion $installdir/usr/share/bash-completion/completions/bitcoind
+    install -Dm0644 $pkgfiles/bitcoin.conf $installdir/usr/share/doc/bitcoind/examples/bitcoin.conf
+    install -Dm0644 $pkgfiles/bitcoind.bash-completion $installdir/usr/share/bash-completion/completions/bitcoind
