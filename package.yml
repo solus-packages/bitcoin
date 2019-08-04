@@ -1,8 +1,8 @@
 name       : bitcoin
-version    : 0.18.0
-release    : 32
+version    : 0.18.1
+release    : 33
 source     :
-    - https://github.com/bitcoin/bitcoin/archive/v0.18.0.tar.gz : ef986ae1730aa975682b6cc8326875e8e7c9d639ba2171351c50d053a55fcd38
+    - https://github.com/bitcoin/bitcoin/archive/v0.18.1.tar.gz : db3c76ac913adfd67e3c7ff243b443c9706f81dd382d1212875fefc2de1ea5ff
 license    : MIT
 summary    : Bitcoin is an experimental new digital currency that enables instant payments to anyone, anywhere in the world.
 description: |

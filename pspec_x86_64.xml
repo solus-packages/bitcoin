@@ -35,6 +35,7 @@
             <Path fileType="man">/usr/share/man/man1/bitcoin-cli.1</Path>
             <Path fileType="man">/usr/share/man/man1/bitcoin-qt.1</Path>
             <Path fileType="man">/usr/share/man/man1/bitcoin-tx.1</Path>
+            <Path fileType="man">/usr/share/man/man1/bitcoin-wallet.1</Path>
             <Path fileType="man">/usr/share/man/man1/bitcoind.1</Path>
             <Path fileType="data">/usr/share/pixmaps/bitcoin128.png</Path>
         </Files>
@@ -46,7 +47,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="32">bitcoin</Dependency>
+            <Dependency release="33">bitcoin</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/bitcoinconsensus.h</Path>
@@ -55,9 +56,9 @@
         </Files>
     </Package>
     <History>
-        <Update release="32">
-            <Date>2019-06-03</Date>
-            <Version>0.18.0</Version>
+        <Update release="33">
+            <Date>2019-08-04</Date>
+            <Version>0.18.1</Version>
             <Comment>Packaging update</Comment>
             <Name>Joshua Strobl</Name>
             <Email>joshua@stroblindustries.com</Email>
