@@ -17,9 +17,7 @@ libevent-2.1.so.6
 libevent_pthreads-2.1.so.6
 libgcc_s.so.1
 libm.so.6
-libprotobuf.so.17
 libpthread.so.0
 libqrencode.so.4
-libssl.so.1.0.0
 libstdc++.so.6
 libzmq.so.5
