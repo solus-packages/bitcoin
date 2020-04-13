@@ -2,8 +2,8 @@
     <Source>
         <Name>bitcoin</Name>
         <Packager>
-            <Name>Joey Riches</Name>
-            <Email>josephriches@gmail.com</Email>
+            <Name>F. von Gellhorn</Name>
+            <Email>flinux@vongellhorn.ch</Email>
         </Packager>
         <License>MIT</License>
         <PartOf>network.clients</PartOf>
@@ -47,7 +47,7 @@
 </Description>
         <PartOf>programming.devel</PartOf>
         <RuntimeDependencies>
-            <Dependency release="35">bitcoin</Dependency>
+            <Dependency release="36">bitcoin</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include/bitcoinconsensus.h</Path>
@@ -56,12 +56,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="35">
-            <Date>2019-11-15</Date>
+        <Update release="36">
+            <Date>2020-04-10</Date>
             <Version>0.19.0</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joey Riches</Name>
-            <Email>josephriches@gmail.com</Email>
+            <Name>F. von Gellhorn</Name>
+            <Email>flinux@vongellhorn.ch</Email>
         </Update>
     </History>
 </PISI>
