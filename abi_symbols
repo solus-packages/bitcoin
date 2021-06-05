@@ -1,3 +1,15 @@
+bench_bitcoin:__bss_start
+bench_bitcoin:_edata
+bench_bitcoin:_end
+bitcoin-qt:__bss_start
+bitcoin-qt:_edata
+bitcoin-qt:_end
+bitcoin-wallet:__bss_start
+bitcoin-wallet:_edata
+bitcoin-wallet:_end
+bitcoind:__bss_start
+bitcoind:_edata
+bitcoind:_end
 libbitcoinconsensus.so.0:AES128_decrypt
 libbitcoinconsensus.so.0:AES128_encrypt
 libbitcoinconsensus.so.0:AES128_init
@@ -100,6 +112,7 @@ libbitcoinconsensus.so.0:_ZN13AES256EncryptC2EPKh
 libbitcoinconsensus.so.0:_ZN13AES256EncryptD1Ev
 libbitcoinconsensus.so.0:_ZN13AES256EncryptD2Ev
 libbitcoinconsensus.so.0:_ZN13arith_uint25610SetCompactEjPbS0_
+libbitcoinconsensus.so.0:_ZN15ECCVerifyHandle8refcountE
 libbitcoinconsensus.so.0:_ZN15ECCVerifyHandleC1Ev
 libbitcoinconsensus.so.0:_ZN15ECCVerifyHandleC2Ev
 libbitcoinconsensus.so.0:_ZN15ECCVerifyHandleD1Ev
@@ -147,6 +160,8 @@ libbitcoinconsensus.so.0:_ZN7CSHA5125WriteEPKhm
 libbitcoinconsensus.so.0:_ZN7CSHA5128FinalizeEPh
 libbitcoinconsensus.so.0:_ZN7CSHA512C1Ev
 libbitcoinconsensus.so.0:_ZN7CSHA512C2Ev
+libbitcoinconsensus.so.0:_ZN7uint2563ONEE
+libbitcoinconsensus.so.0:_ZN7uint2564ZEROE
 libbitcoinconsensus.so.0:_ZN8ChaCha204SeekEm
 libbitcoinconsensus.so.0:_ZN8ChaCha205CryptEPKhPhm
 libbitcoinconsensus.so.0:_ZN8ChaCha205SetIVEm
@@ -198,6 +213,7 @@ libbitcoinconsensus.so.0:bitcoinconsensus_version
 libbitcoinconsensus.so.0:secp256k1_context_clone
 libbitcoinconsensus.so.0:secp256k1_context_create
 libbitcoinconsensus.so.0:secp256k1_context_destroy
+libbitcoinconsensus.so.0:secp256k1_context_no_precomp
 libbitcoinconsensus.so.0:secp256k1_context_preallocated_clone
 libbitcoinconsensus.so.0:secp256k1_context_preallocated_clone_size
 libbitcoinconsensus.so.0:secp256k1_context_preallocated_create
@@ -236,6 +252,9 @@ libbitcoinconsensus.so.0:secp256k1_keypair_create
 libbitcoinconsensus.so.0:secp256k1_keypair_pub
 libbitcoinconsensus.so.0:secp256k1_keypair_xonly_pub
 libbitcoinconsensus.so.0:secp256k1_keypair_xonly_tweak_add
+libbitcoinconsensus.so.0:secp256k1_nonce_function_bip340
+libbitcoinconsensus.so.0:secp256k1_nonce_function_default
+libbitcoinconsensus.so.0:secp256k1_nonce_function_rfc6979
 libbitcoinconsensus.so.0:secp256k1_schnorrsig_sign
 libbitcoinconsensus.so.0:secp256k1_schnorrsig_verify
 libbitcoinconsensus.so.0:secp256k1_scratch_space_create
@@ -245,3 +264,9 @@ libbitcoinconsensus.so.0:secp256k1_xonly_pubkey_parse
 libbitcoinconsensus.so.0:secp256k1_xonly_pubkey_serialize
 libbitcoinconsensus.so.0:secp256k1_xonly_pubkey_tweak_add
 libbitcoinconsensus.so.0:secp256k1_xonly_pubkey_tweak_add_check
+test_bitcoin:__bss_start
+test_bitcoin:_edata
+test_bitcoin:_end
+test_bitcoin-qt:__bss_start
+test_bitcoin-qt:_edata
+test_bitcoin-qt:_end

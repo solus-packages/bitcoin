@@ -1,0 +1,7 @@
+bench_bitcoin
+bitcoin-qt
+bitcoin-wallet
+bitcoind
+libbitcoinconsensus.so.0
+test_bitcoin
+test_bitcoin-qt
